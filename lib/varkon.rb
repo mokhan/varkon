@@ -1,6 +1,6 @@
-require "searchable/version"
+require "varkon/version"
 
-module Searchable
+module Varkon
   class Error < StandardError; end
 
   def email?(value)

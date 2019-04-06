@@ -1,17 +1,17 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "searchable/version"
+require "varkon/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "searchable"
-  spec.version       = Searchable::VERSION
+  spec.name          = "varkon"
+  spec.version       = Varkon::VERSION
   spec.authors       = ["mokha"]
   spec.email         = ["mokha@cisco.com"]
 
   spec.summary       = %q{utility methods for matching patterns.}
   spec.description   = %q{utility methods for matching patterns.}
-  spec.homepage      = "https://rubygems.org/gems/searchable"
+  spec.homepage      = "https://rubygems.org/gems/varkon"
   spec.license       = "MIT"
 
   # Specify which files should be added to the gem when it is released.

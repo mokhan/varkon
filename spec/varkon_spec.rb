@@ -1,9 +1,9 @@
 class Lamb
-  extend Searchable
+  extend Varkon
 end
 
-RSpec.describe Searchable do
-  specify { expect(Searchable::VERSION).not_to be_nil }
+RSpec.describe Varkon do
+  specify { expect(Varkon::VERSION).not_to be_nil }
 
   describe '.email?' do
     [

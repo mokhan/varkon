@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "searchable"
+require "varkon"
 require "digest"
 require "securerandom"
 

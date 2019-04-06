@@ -1,11 +1,11 @@
-# Searchable
+# Varkon
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'searchable'
+gem 'varkon'
 ```
 
 And then execute:
@@ -14,13 +14,13 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install searchable
+    $ gem install varkon
 
 ## Usage
 
 ```ruby
 class Lamb
-  extend Searchable
+  extend Varkon
 end
 
 puts Lamb.email?("email@example.org")
@@ -44,7 +44,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/mokhan/searchable.
+Bug reports and pull requests are welcome on GitHub at https://github.com/mokhan/varkon.
 
 ## License
 
