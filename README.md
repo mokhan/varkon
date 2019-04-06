@@ -1,7 +1,5 @@
 # Searchable
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/searchable`. To experiment with that code, run `bin/console` for an interactive prompt.
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -20,7 +18,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+class Lamb
+  extend Searchable
+end
+
+puts Lamb.email?("email@example.org")
+puts Lamb.guid?(SecureRandom.uuid)
+puts Lamb.hostname?('example.com')
+puts Lamb.ipv4?('192.168.1.1')
+puts Lamb.ipv6?('2001:0000:1234:0000:0000:C1C0:ABCD:0876')
+puts Lamb.md5?(Digest::MD5.new.hexdigest(Random.new.bytes(100)))
+puts Lamb.sha1?(Digest::SHA1.new.hexdigest(Random.new.bytes(100)))
+puts Lamb.sha256?(Digest::SHA2.new(256).hexdigest(Random.new.bytes(100)))
+puts Lamb.url?('http://foo.com')
+puts Lamb.partial_url?('www.foo.com/')
+puts Lamb.mac_address?('AA-BB-CC-DD-EE-FF')
+```
 
 ## Development
 
@@ -30,7 +44,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/searchable.
+Bug reports and pull requests are welcome on GitHub at https://github.com/mokhan/searchable.
 
 ## License
 
